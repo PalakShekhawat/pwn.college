@@ -39,4 +39,33 @@ Eg.`grep SEARCH_STRING /path/to/file`
 `diff` compares two files line by line and shows you exactly what's different between them.
 
 ## 5.Listing Files
+`ls` is used for listing files in given directory.
 
+## 6.`touch`
+Used for creating new files.Syntax for the same is `touch newfile`.
+
+## 7.Removing files
+`rm` is used for deleting files.
+
+## 8.Moving files
+`mv` is used for moving files.<br>
+Syntax: `mv your-file location`
+
+## 9.Copying files
+`cp` is used to move the file to new location as well keep the original.<br>
+Eg. `cp file new-file`.
+
+## 10.Hidden files
+Command `ls -a` is used for listing all the files starting with `.` alongwith rest of the files.
+
+## 11.Making directories
+`mkdir newdir` is used for making new directory.
+
+## 12.Finding files
+Syntax of `find` command id `find [options] [path] [expression]`.<br>
+Path specifies where to start (defaults to current directory .), and expression defines search criteria like -name "filename".
+## 13.Linking files
+Symlinks (symbolic links) are special files in Linux that act like shortcuts, pointing to another file or directory via a path reference.
+Create: ln -s /target /symlink (target first, then link name).<br>
+Trick programs: Replace expected file with symlink to real target (e.g., ln -s /flag /home/hacker/not-the-flag).<br>
+Verify: ls -l (shows ->), file (shows "symbolic link to").<br>
